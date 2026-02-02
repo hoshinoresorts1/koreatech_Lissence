@@ -14,6 +14,10 @@ struct ContentView: View {
                 
                 Text(message.title)
                     .font(.system(size: 15, weight: .bold))
+                    .onChange(of: connectivity.receivedMessage?.title) {
+                        // 데이터가 바뀌면(즉, 수신되면) 진동을 울림
+                        WKInterfaceDevice.current().play(.notification)
+                    }
             } else {
                 ProgressView() // 로딩 애니메이션
                 Text("소리 대기 중...")
