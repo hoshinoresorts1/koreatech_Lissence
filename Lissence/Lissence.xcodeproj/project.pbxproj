@@ -7,86 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D10CEF0870B37FD312038CA /* Pods_Lissence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1894C0E317F86C29D5530D81 /* Pods_Lissence.framework */; };
+		C3E4EA6D2F3044DE008F62FB /* LissenceWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C3E4EA632F3044DC008F62FB /* LissenceWatchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3E4EA762F30479E008F62FB /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4EA752F30479E008F62FB /* ConnectivityManager.swift */; };
+		C3E4EA772F30479E008F62FB /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4EA752F30479E008F62FB /* ConnectivityManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C3E4EA6B2F3044DE008F62FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3E4EA492F3042FB008F62FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E4EA622F3044DC008F62FB;
+			remoteInfo = "LissenceWatchApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3E4EA712F3044DE008F62FB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C3E4EA6D2F3044DE008F62FB /* LissenceWatchApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1894C0E317F86C29D5530D81 /* Pods_Lissence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lissence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25591D2264888051E567584E /* Pods-Lissence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lissence.debug.xcconfig"; path = "Target Support Files/Pods-Lissence/Pods-Lissence.debug.xcconfig"; sourceTree = "<group>"; };
-		538BDE3BFFD951876CB378ED /* Pods-Lissence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lissence.release.xcconfig"; path = "Target Support Files/Pods-Lissence/Pods-Lissence.release.xcconfig"; sourceTree = "<group>"; };
-		C3999B792F1E6148009952C4 /* Lissence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lissence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E4EA512F3042FB008F62FB /* Lissence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lissence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E4EA632F3044DC008F62FB /* LissenceWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LissenceWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E4EA752F30479E008F62FB /* ConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C3999B8B2F1E6149009952C4 /* Exceptions for "Lissence" folder in "Lissence" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = C3999B782F1E6148009952C4 /* Lissence */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C3999B7B2F1E6148009952C4 /* Lissence */ = {
+		C3E4EA532F3042FB008F62FB /* Lissence */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C3999B8B2F1E6149009952C4 /* Exceptions for "Lissence" folder in "Lissence" target */,
-			);
 			path = Lissence;
 			sourceTree = "<group>";
 		};
-		C3999BA52F1E71E2009952C4 /* Resources */ = {
+		C3E4EA642F3044DC008F62FB /* LissenceWatchApp Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Resources;
+			path = "LissenceWatchApp Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C3999B762F1E6148009952C4 /* Frameworks */ = {
+		C3E4EA4E2F3042FB008F62FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D10CEF0870B37FD312038CA /* Pods_Lissence.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E4EA602F3044DC008F62FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		542CF0FBC6B39A8993E0DB64 /* Frameworks */ = {
+		C3E4EA482F3042FB008F62FB = {
 			isa = PBXGroup;
 			children = (
-				1894C0E317F86C29D5530D81 /* Pods_Lissence.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AE2785A5154910850F565E61 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				25591D2264888051E567584E /* Pods-Lissence.debug.xcconfig */,
-				538BDE3BFFD951876CB378ED /* Pods-Lissence.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		C3999B702F1E6148009952C4 = {
-			isa = PBXGroup;
-			children = (
-				C3999BA52F1E71E2009952C4 /* Resources */,
-				C3999B7B2F1E6148009952C4 /* Lissence */,
-				C3999B7A2F1E6148009952C4 /* Products */,
-				AE2785A5154910850F565E61 /* Pods */,
-				542CF0FBC6B39A8993E0DB64 /* Frameworks */,
+				C3E4EA752F30479E008F62FB /* ConnectivityManager.swift */,
+				C3E4EA532F3042FB008F62FB /* Lissence */,
+				C3E4EA642F3044DC008F62FB /* LissenceWatchApp Watch App */,
+				C3E4EA522F3042FB008F62FB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C3999B7A2F1E6148009952C4 /* Products */ = {
+		C3E4EA522F3042FB008F62FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3999B792F1E6148009952C4 /* Lissence.app */,
+				C3E4EA512F3042FB008F62FB /* Lissence.app */,
+				C3E4EA632F3044DC008F62FB /* LissenceWatchApp Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,65 +95,99 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C3999B782F1E6148009952C4 /* Lissence */ = {
+		C3E4EA502F3042FB008F62FB /* Lissence */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3999B8C2F1E6149009952C4 /* Build configuration list for PBXNativeTarget "Lissence" */;
+			buildConfigurationList = C3E4EA5C2F3042FC008F62FB /* Build configuration list for PBXNativeTarget "Lissence" */;
 			buildPhases = (
-				EF58A366A89F72E6B660B575 /* [CP] Check Pods Manifest.lock */,
-				C3999B752F1E6148009952C4 /* Sources */,
-				C3999B762F1E6148009952C4 /* Frameworks */,
-				C3999B772F1E6148009952C4 /* Resources */,
-				A9D19940A37DA909CA3397A2 /* [CP] Embed Pods Frameworks */,
+				C3E4EA4D2F3042FB008F62FB /* Sources */,
+				C3E4EA4E2F3042FB008F62FB /* Frameworks */,
+				C3E4EA4F2F3042FB008F62FB /* Resources */,
+				C3E4EA712F3044DE008F62FB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E4EA6C2F3044DE008F62FB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C3E4EA532F3042FB008F62FB /* Lissence */,
+			);
+			name = Lissence;
+			packageProductDependencies = (
+			);
+			productName = Lissence;
+			productReference = C3E4EA512F3042FB008F62FB /* Lissence.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3E4EA622F3044DC008F62FB /* LissenceWatchApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E4EA6E2F3044DE008F62FB /* Build configuration list for PBXNativeTarget "LissenceWatchApp Watch App" */;
+			buildPhases = (
+				C3E4EA5F2F3044DC008F62FB /* Sources */,
+				C3E4EA602F3044DC008F62FB /* Frameworks */,
+				C3E4EA612F3044DC008F62FB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C3999B7B2F1E6148009952C4 /* Lissence */,
-				C3999BA52F1E71E2009952C4 /* Resources */,
+				C3E4EA642F3044DC008F62FB /* LissenceWatchApp Watch App */,
 			);
-			name = Lissence;
-			productName = Lissence;
-			productReference = C3999B792F1E6148009952C4 /* Lissence.app */;
+			name = "LissenceWatchApp Watch App";
+			packageProductDependencies = (
+			);
+			productName = "LissenceWatchApp Watch App";
+			productReference = C3E4EA632F3044DC008F62FB /* LissenceWatchApp Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C3999B712F1E6148009952C4 /* Project object */ = {
+		C3E4EA492F3042FB008F62FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					C3999B782F1E6148009952C4 = {
+					C3E4EA502F3042FB008F62FB = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					C3E4EA622F3044DC008F62FB = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = C3999B742F1E6148009952C4 /* Build configuration list for PBXProject "Lissence" */;
+			buildConfigurationList = C3E4EA4C2F3042FB008F62FB /* Build configuration list for PBXProject "Lissence" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = C3999B702F1E6148009952C4;
+			mainGroup = C3E4EA482F3042FB008F62FB;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C3999B7A2F1E6148009952C4 /* Products */;
+			productRefGroup = C3E4EA522F3042FB008F62FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3999B782F1E6148009952C4 /* Lissence */,
+				C3E4EA502F3042FB008F62FB /* Lissence */,
+				C3E4EA622F3044DC008F62FB /* LissenceWatchApp Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C3999B772F1E6148009952C4 /* Resources */ = {
+		C3E4EA4F2F3042FB008F62FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E4EA612F3044DC008F62FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -161,126 +196,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A9D19940A37DA909CA3397A2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lissence/Pods-Lissence-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lissence/Pods-Lissence-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lissence/Pods-Lissence-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF58A366A89F72E6B660B575 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Lissence-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		C3999B752F1E6148009952C4 /* Sources */ = {
+		C3E4EA4D2F3042FB008F62FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E4EA762F30479E008F62FB /* ConnectivityManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E4EA5F2F3044DC008F62FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E4EA772F30479E008F62FB /* ConnectivityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C3E4EA6C2F3044DE008F62FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E4EA622F3044DC008F62FB /* LissenceWatchApp Watch App */;
+			targetProxy = C3E4EA6B2F3044DE008F62FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		C3999B8D2F1E6149009952C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25591D2264888051E567584E /* Pods-Lissence.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Lissence/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.-usagi.Lissence";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C3999B8E2F1E6149009952C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 538BDE3BFFD951876CB378ED /* Pods-Lissence.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Lissence/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.-usagi.Lissence";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C3999B8F2F1E6149009952C4 /* Debug */ = {
+		C3E4EA5A2F3042FC008F62FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -343,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		C3999B902F1E6149009952C4 /* Release */ = {
+		C3E4EA5B2F3042FC008F62FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,28 +343,165 @@
 			};
 			name = Release;
 		};
+		C3E4EA5D2F3042FC008F62FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.-usagi.Lissence";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3E4EA5E2F3042FC008F62FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.-usagi.Lissence";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3E4EA6F2F3044DE008F62FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LissenceWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "net.-usagi.Lissence";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.-usagi.Lissence.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		C3E4EA702F3044DE008F62FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LissenceWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "net.-usagi.Lissence";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.-usagi.Lissence.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C3999B742F1E6148009952C4 /* Build configuration list for PBXProject "Lissence" */ = {
+		C3E4EA4C2F3042FB008F62FB /* Build configuration list for PBXProject "Lissence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3999B8F2F1E6149009952C4 /* Debug */,
-				C3999B902F1E6149009952C4 /* Release */,
+				C3E4EA5A2F3042FC008F62FB /* Debug */,
+				C3E4EA5B2F3042FC008F62FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3999B8C2F1E6149009952C4 /* Build configuration list for PBXNativeTarget "Lissence" */ = {
+		C3E4EA5C2F3042FC008F62FB /* Build configuration list for PBXNativeTarget "Lissence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3999B8D2F1E6149009952C4 /* Debug */,
-				C3999B8E2F1E6149009952C4 /* Release */,
+				C3E4EA5D2F3042FC008F62FB /* Debug */,
+				C3E4EA5E2F3042FC008F62FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E4EA6E2F3044DE008F62FB /* Build configuration list for PBXNativeTarget "LissenceWatchApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E4EA6F2F3044DE008F62FB /* Debug */,
+				C3E4EA702F3044DE008F62FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C3999B712F1E6148009952C4 /* Project object */;
+	rootObject = C3E4EA492F3042FB008F62FB /* Project object */;
 }
