@@ -12,8 +12,11 @@ struct ContentView: View {
 
             Button(action: {
                 let msg = MessageData(title: "사이렌 감지!", iconName: "bell.and.waves.left.and.right.fill", isDanger: true)
-                connectivity.send(message: msg)
-                print("아이폰: 사이렌 데이터 전송 버튼 눌림")
+            
+                connectivity.send(message: msg) // 워치로 보냄
+                connectivity.receivedMessage = msg
+                
+                print("아이폰: 데이터 전송 및 내 상태 업데이트 완료")
             }) {
                 Label("사이렌 전송", systemImage: "bell.fill")
                     .font(.headline)
