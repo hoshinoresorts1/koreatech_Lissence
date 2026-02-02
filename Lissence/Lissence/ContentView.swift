@@ -11,7 +11,7 @@ struct ContentView: View {
                 .foregroundColor(.secondary)
 
             Button(action: {
-                let msg = MessageData(title: "사이렌 감지!", iconName: "siren.fill", isDanger: true)
+                let msg = MessageData(title: "사이렌 감지!", iconName: "bell.and.waves.left.and.right.fill", isDanger: true)
                 connectivity.send(message: msg)
                 print("아이폰: 사이렌 데이터 전송 버튼 눌림")
             }) {
