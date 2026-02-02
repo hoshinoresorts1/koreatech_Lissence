@@ -28,6 +28,18 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            Button(action: {
+                let msg = MessageData(title: "음악 모드", iconName: "music.note", isDanger: false)
+                connectivity.send(message: msg)
+                print("아이폰: 음악 데이터 전송 버튼 눌림")
+            }) {
+                Label("음악 전송", systemImage: "music.note")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
             
             // ... 이하 동일한 구조의 버튼
         }
