@@ -1,43 +1,40 @@
-// iPhone 쪽 ContentView.swift
-
-//
-//struct ContentView: View {
-//    var body: some View {
-//        VStack {//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//            Text("Hello, world!")
-//        }
-//        .padding()
-//    }
-//}
-//
-//#Preview {
-//    ContentView()
-//}
-
 import SwiftUI
 
 struct ContentView: View {
-    // 통신 매니저 연결
     @StateObject var connectivity = ConnectivityManager.shared
     
     var body: some View {
-        VStack(spacing: 20) {
-            Button("🚨 사이렌 데이터 전송") {
+        VStack(spacing: 30) {
+            // 연결 상태 확인용 텍스트
+            Text(connectivity.receivedMessage == nil ? "연결 대기 중" : "데이터 수신됨!")
+                .font(.caption)
+                .foregroundColor(.secondary)
+
+            Button(action: {
                 let msg = MessageData(title: "사이렌 감지!", iconName: "siren.fill", isDanger: true)
                 connectivity.send(message: msg)
+                print("아이폰: 사이렌 데이터 전송 버튼 눌림")
+            }) {
+                Label("사이렌 전송", systemImage: "bell.fill")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
-            .buttonStyle(.borderedProminent)
             
-            Button("🎵 음악 데이터 전송") {
+            Button(action: {
                 let msg = MessageData(title: "음악 모드", iconName: "music.note", isDanger: false)
                 connectivity.send(message: msg)
+                print("아이폰: 음악 데이터 전송 버튼 눌림")
+            }) {
+                Label("음악 전송", systemImage: "music.note")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
         }
     }
 }
-
-//#Preview {
-//    ContentView()
-//}
