@@ -16,11 +16,20 @@ class SoundDetector: NSObject, SNResultsObserving, ObservableObject {
     @Published var lastDetectedSound: String = ""
     @Published var isDetecting: Bool = false
 
+//    func startDetection() {
+//        // 1. 오디오 세션 설정
+//        let audioSession = AVAudioSession.sharedInstance()
+//        do {
+//            try audioSession.setCategory(.playAndRecord, mode: .measurement, options: .duckOthers)
+//            try audioSession.setActive(true)
+//        } catch {
+//            print("오디오 세션 설정 실패")
+//        }
     func startDetection() {
-        // 1. 오디오 세션 설정
         let audioSession = AVAudioSession.sharedInstance()
         do {
-            try audioSession.setCategory(.playAndRecord, mode: .measurement, options: .duckOthers)
+            // 모드를 .default 또는 .videoRecording 등으로 변경하여 더 넓은 대역폭 확보
+            try audioSession.setCategory(.playAndRecord, mode: .default, options: [.duckOthers, .defaultToSpeaker])
             try audioSession.setActive(true)
         } catch {
             print("오디오 세션 설정 실패")
@@ -62,26 +71,30 @@ class SoundDetector: NSObject, SNResultsObserving, ObservableObject {
         guard let classificationResult = result as? SNClassificationResult,
               let bestClassification = classificationResult.classifications.first else { return }
         
-        // 신뢰도가 70% 이상일 때만 의미 있는 소리로 간주
-        if bestClassification.confidence > 0.7 {
+        // 임계값을 0.5로 낮추어 더 민감하게 반응하게 함
+        if bestClassification.confidence > 0.5 {
             let soundLabel = bestClassification.identifier
+            print("감지된 소리: \(soundLabel), 신뢰도: \(bestClassification.confidence)") // 디버깅용 출력
             
             DispatchQueue.main.async {
                 self.processResult(label: soundLabel)
             }
         }
     }
-
     private func processResult(label: String) {
-        // Apple SoundAnalysis가 반환하는 레이블 중 필요한 것만 필터링
-        // 예: siren, car_horn, fire_alarm, doorbell, shouting 등
         switch label {
-        case "siren":
-            sendDangerAlert(title: "🚨 사이렌 감지!", icon: "bell.and.waves.left.and.right.fill")
-        case "car_horn":
+        // 사이렌 관련 레이블 통합
+        case "siren", "emergency_vehicle", "fire_alarm":
+            sendDangerAlert(title: "🚨 위험 신호 감지!", icon: "bell.and.waves.left.and.right.fill")
+            
+        // 경적 관련
+        case "car_horn", "vehicle_horn":
             sendDangerAlert(title: "🚘 경적 감지!", icon: "car.fill")
-        case "shouting":
-            sendDangerAlert(title: "🗣️ 큰 외침 감지!", icon: "exclamationmark.bubble.fill")
+            
+        // 외침 관련 레이블 통합 (shouting, screaming, yelling 등)
+        case "shouting", "screaming", "yelling", "laughter": // 웃음소리가 외침으로 인식될 때가 많음
+            sendDangerAlert(title: "🗣️ 큰 소음/외침 감지!", icon: "exclamationmark.bubble.fill")
+            
         default:
             break
         }

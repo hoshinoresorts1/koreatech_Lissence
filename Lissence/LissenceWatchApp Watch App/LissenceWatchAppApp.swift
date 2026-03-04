@@ -15,3 +15,7 @@ struct LissenceWatchApp_Watch_AppApp: App {
         }
     }
 }
+
+#Preview {
+    watchContentView()
+}
