@@ -1,3 +1,6 @@
+/// 음성인식기능(in 감지모드)
+/// - 애플의 Speech와 SoundAnalysis를 이용하여 음성인식을 수행합니다.
+
 import Foundation
 import Speech
 import AVFoundation
