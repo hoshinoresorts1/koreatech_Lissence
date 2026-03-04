@@ -11,7 +11,7 @@ import SwiftUI
 struct LissenceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            iPhoneContentView()
         }
     }
 }
