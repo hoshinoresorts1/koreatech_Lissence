@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct watchContentView: View {
     @StateObject var connectivity = ConnectivityManager.shared
     
     var body: some View {
